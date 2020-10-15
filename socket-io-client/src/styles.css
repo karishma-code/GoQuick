@@ -1,0 +1,90 @@
+.talk-bubble {
+  margin: 5px 22px;
+  display: inline-block;
+  position: relative;
+  height: auto;
+  background-color: #dcdcdc;
+}
+
+.triangle.left-top:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -10px;
+  right: auto;
+  top: 0px;
+  bottom: auto;
+  border: 10px solid;
+  border-color: #dcdcdc transparent transparent transparent;
+}
+
+.talktext {
+  padding: 10px;
+}
+.message-area {
+  padding: 10px;
+}
+
+.send-icon {
+  padding-left: 10px;
+  cursor: pointer;
+}
+.send-icon > img {
+  width: 15px;
+}
+.input-box {
+  width: calc(100% - 100px);
+  border: none;
+  background: #eaeaea;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 10px;
+}
+.input-box:focus {
+  outline: none;
+  border: none;
+}
+
+.triangle.right-top:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -10px;
+  top: 0;
+  bottom: auto;
+  border: 10px solid;
+  border-color: #dcdcdc transparent transparent transparent;
+}
+
+.text-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-name {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #c2cccc;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.prev-message {
+  height: calc(100% - 50px);
+}
+.status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
